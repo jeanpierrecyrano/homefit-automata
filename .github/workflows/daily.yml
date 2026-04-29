@@ -1,0 +1,29 @@
+name: HomeFit Automata Engine
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Esegue ogni notte alle 02:00
+  workflow_dispatch: # Permette l'avvio manuale per i test
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Esegui Aggiornamento Scheda
+        run: python update.py
+
+      - name: Salva Cambiamenti
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Scheda aggiornata - $(date +'%Y-%m-%d')" || exit 0
+          git push
