@@ -26,8 +26,8 @@
 <body>
     <div id="content">
         <div class="header">
-            <h1>Giovedì: Upper Body (Trazione) & Addome Inf.</h1>
-            <p>Stima dispendio: 300 - 350 kcal</p>
+            <h1>Venerdì: Full Body & Circuito Metabolico</h1>
+            <p>Stima dispendio: 450 - 550 kcal</p>
         </div>
         <div style="display:flex; gap:10px; justify-content:center; margin-bottom:20px;">
             <button onclick="document.body.classList.toggle('light-mode')">☀️ Garden Mode</button>
@@ -35,40 +35,33 @@
         </div>
         
         <div class="card">
-            <h2>Rematore Singolo (Schiena Mid/Up)</h2>
-            <div class="badge">4 x 8-10 per lato</div>
-            <p><strong>💡 Focus:</strong> Usa 10kg. Tira il gomito verso l'anca.</p>
-            <a href="https://www.youtube.com/results?search_query=one+arm+dumbbell+row" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+            <h2>Thruster (Gambe + Spalle)</h2>
+            <div class="badge">4 x 12</div>
+            <p><strong>💡 Focus:</strong> Squat e spinta sopra la testa in un solo movimento.</p>
+            <a href="https://www.youtube.com/results?search_query=dumbbell+thrusters" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
         </div>
         
         <div class="card">
-            <h2>Dumbbell Pullover (Schiena Up/Petto)</h2>
+            <h2>Push-up Declinati (Piedi su sedia)</h2>
+            <div class="badge">3 x Max</div>
+            <p><strong>💡 Focus:</strong> Sposta il focus sulla parte alta del petto.</p>
+            <a href="https://www.youtube.com/results?search_query=decline+push+up" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Affondi Laterali (Cosce)</h2>
+            <div class="badge">3 x 10 per gamba</div>
+            <p><strong>💡 Focus:</strong> Mantieni la gamba opposta tesa.</p>
+            <a href="https://www.youtube.com/results?search_query=side+lunges+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Rematore Doppio (Schiena)</h2>
             <div class="badge">3 x 12</div>
-            <p><strong>💡 Focus:</strong> Braccia quasi tese. Senti allungare il dorsale.</p>
-            <a href="https://www.youtube.com/results?search_query=dumbbell+pullover" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+            <p><strong>💡 Focus:</strong> Tira entrambi i manubri verso l'ombelico.</p>
+            <a href="https://www.youtube.com/results?search_query=bent+over+dumbbell+row" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
         </div>
-        
-        <div class="card">
-            <h2>Alzate a 90° (Spalla Posteriore)</h2>
-            <div class="badge">3 x 12-15</div>
-            <p><strong>💡 Focus:</strong> Usa 4-6kg. Busto parallelo a terra.</p>
-            <a href="https://www.youtube.com/results?search_query=rear+delt+fly+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Curl Bicipiti Alternato</h2>
-            <div class="badge">4 x 10-12</div>
-            <p><strong>💡 Focus:</strong> Senza oscillare. Contrai il bicipite in cima.</p>
-            <a href="https://www.youtube.com/results?search_query=bicep+curls+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Leg Raises a terra (Addome Inf)</h2>
-            <div class="badge">4 x 15</div>
-            <p><strong>💡 Focus:</strong> Gambe tese. Non inarcare la schiena lombare.</p>
-            <a href="https://www.youtube.com/results?search_query=leg+raises+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
+        <div class='card finisher'><h2>🔥 FINISHER: 3 Minuti di Burpees</h2></div>
     </div>
 
     <div class="sticky-timer">
@@ -80,7 +73,7 @@
     <script>
         function savePDF() {
             const element = document.getElementById('content');
-            html2pdf().from(element).save('Allenamento_Giovedì.pdf');
+            html2pdf().from(element).save('Allenamento_Venerdì.pdf');
         }
         let t;
         function startTimer(s) {
