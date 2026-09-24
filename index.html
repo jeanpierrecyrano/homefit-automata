@@ -26,8 +26,8 @@
 <body>
     <div id="content">
         <div class="header">
-            <h1>Mercoledì: Lower Body, Polpacci & Lombari</h1>
-            <p>Stima dispendio: 400 - 480 kcal</p>
+            <h1>Giovedì: Upper Body (Trazione) & Addome Inf.</h1>
+            <p>Stima dispendio: 300 - 350 kcal</p>
         </div>
         <div style="display:flex; gap:10px; justify-content:center; margin-bottom:20px;">
             <button onclick="document.body.classList.toggle('light-mode')">☀️ Garden Mode</button>
@@ -35,38 +35,38 @@
         </div>
         
         <div class="card">
-            <h2>Squat Bulgaro (Coscia Ant/Glutei)</h2>
-            <div class="badge">4 x 8-10 per gamba</div>
-            <p><strong>💡 Focus:</strong> Usa 10kg per mano. Schiena dritta, scendi profondo.</p>
-            <a href="https://www.youtube.com/results?search_query=bulgarian+split+squat" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+            <h2>Rematore Singolo (Schiena Mid/Up)</h2>
+            <div class="badge">4 x 8-10 per lato</div>
+            <p><strong>💡 Focus:</strong> Usa 10kg. Tira il gomito verso l'anca.</p>
+            <a href="https://www.youtube.com/results?search_query=one+arm+dumbbell+row" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
         </div>
         
         <div class="card">
-            <h2>Stacchi Rumeni / RDL (Coscia Post)</h2>
+            <h2>Dumbbell Pullover (Schiena Up/Petto)</h2>
+            <div class="badge">3 x 12</div>
+            <p><strong>💡 Focus:</strong> Braccia quasi tese. Senti allungare il dorsale.</p>
+            <a href="https://www.youtube.com/results?search_query=dumbbell+pullover" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Alzate a 90° (Spalla Posteriore)</h2>
+            <div class="badge">3 x 12-15</div>
+            <p><strong>💡 Focus:</strong> Usa 4-6kg. Busto parallelo a terra.</p>
+            <a href="https://www.youtube.com/results?search_query=rear+delt+fly+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Curl Bicipiti Alternato</h2>
             <div class="badge">4 x 10-12</div>
-            <p><strong>💡 Focus:</strong> Senti tirare dietro la coscia. Manubri vicini alle gambe.</p>
-            <a href="https://www.youtube.com/results?search_query=romanian+deadlift+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+            <p><strong>💡 Focus:</strong> Senza oscillare. Contrai il bicipite in cima.</p>
+            <a href="https://www.youtube.com/results?search_query=bicep+curls+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
         </div>
         
         <div class="card">
-            <h2>Affondi Posteriori Alternati</h2>
-            <div class="badge">3 x 12 per gamba</div>
-            <p><strong>💡 Focus:</strong> Passo lungo all'indietro. Ginocchio sfiora terra.</p>
-            <a href="https://www.youtube.com/results?search_query=reverse+lunges+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Calf Raise su gradino (Polpacci)</h2>
-            <div class="badge">4 x 20</div>
-            <p><strong>💡 Focus:</strong> Usa un peso in mano. Massima escursione.</p>
-            <a href="https://www.youtube.com/results?search_query=calf+raise+step" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Superwoman (Schiena Inf/Lombari)</h2>
-            <div class="badge">3 x 15</div>
-            <p><strong>💡 Focus:</strong> Solleva petto e gambe insieme. Tieni 2s.</p>
-            <a href="https://www.youtube.com/results?search_query=superman+exercise" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+            <h2>Leg Raises a terra (Addome Inf)</h2>
+            <div class="badge">4 x 15</div>
+            <p><strong>💡 Focus:</strong> Gambe tese. Non inarcare la schiena lombare.</p>
+            <a href="https://www.youtube.com/results?search_query=leg+raises+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
         </div>
         
     </div>
@@ -80,7 +80,7 @@
     <script>
         function savePDF() {
             const element = document.getElementById('content');
-            html2pdf().from(element).save('Allenamento_Mercoledì.pdf');
+            html2pdf().from(element).save('Allenamento_Giovedì.pdf');
         }
         let t;
         function startTimer(s) {
