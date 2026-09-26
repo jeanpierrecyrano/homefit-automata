@@ -26,42 +26,14 @@
 <body>
     <div id="content">
         <div class="header">
-            <h1>Venerdì: Full Body & Circuito Metabolico</h1>
-            <p>Stima dispendio: 450 - 550 kcal</p>
+            <h1>Sabato: Giorno di Recupero Attivo 🔋</h1>
+            <p>Passeggiata o stretching leggero</p>
         </div>
         <div style="display:flex; gap:10px; justify-content:center; margin-bottom:20px;">
             <button onclick="document.body.classList.toggle('light-mode')">☀️ Garden Mode</button>
             <button onclick="savePDF()">💾 Salva PDF</button>
         </div>
-        
-        <div class="card">
-            <h2>Thruster (Gambe + Spalle)</h2>
-            <div class="badge">4 x 12</div>
-            <p><strong>💡 Focus:</strong> Squat e spinta sopra la testa in un solo movimento.</p>
-            <a href="https://www.youtube.com/results?search_query=dumbbell+thrusters" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Push-up Declinati (Piedi su sedia)</h2>
-            <div class="badge">3 x Max</div>
-            <p><strong>💡 Focus:</strong> Sposta il focus sulla parte alta del petto.</p>
-            <a href="https://www.youtube.com/results?search_query=decline+push+up" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Affondi Laterali (Cosce)</h2>
-            <div class="badge">3 x 10 per gamba</div>
-            <p><strong>💡 Focus:</strong> Mantieni la gamba opposta tesa.</p>
-            <a href="https://www.youtube.com/results?search_query=side+lunges+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        
-        <div class="card">
-            <h2>Rematore Doppio (Schiena)</h2>
-            <div class="badge">3 x 12</div>
-            <p><strong>💡 Focus:</strong> Tira entrambi i manubri verso l'ombelico.</p>
-            <a href="https://www.youtube.com/results?search_query=bent+over+dumbbell+row" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
-        </div>
-        <div class='card finisher'><h2>🔥 FINISHER: 3 Minuti di Burpees</h2></div>
+        <div class='card' style='text-align:center;'><h2>Tempo di Recupero!</h2><p>I muscoli hanno bisogno di riposo per crescere. Ci vediamo alla prossima sessione!</p></div>
     </div>
 
     <div class="sticky-timer">
@@ -73,7 +45,7 @@
     <script>
         function savePDF() {
             const element = document.getElementById('content');
-            html2pdf().from(element).save('Allenamento_Venerdì.pdf');
+            html2pdf().from(element).save('Allenamento_Sabato.pdf');
         }
         let t;
         function startTimer(s) {
