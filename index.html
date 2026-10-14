@@ -26,14 +26,49 @@
 <body>
     <div id="content">
         <div class="header">
-            <h1>Martedì: Giorno di Recupero Attivo 🔋</h1>
-            <p>Passeggiata o stretching leggero</p>
+            <h1>Mercoledì: Lower Body, Polpacci & Lombari</h1>
+            <p>Stima dispendio: 400 - 480 kcal</p>
         </div>
         <div style="display:flex; gap:10px; justify-content:center; margin-bottom:20px;">
             <button onclick="document.body.classList.toggle('light-mode')">☀️ Garden Mode</button>
             <button onclick="savePDF()">💾 Salva PDF</button>
         </div>
-        <div class='card' style='text-align:center;'><h2>Tempo di Recupero!</h2><p>I muscoli hanno bisogno di riposo per crescere. Ci vediamo alla prossima sessione!</p></div>
+        
+        <div class="card">
+            <h2>Squat Bulgaro (Coscia Ant/Glutei)</h2>
+            <div class="badge">4 x 8-10 per gamba</div>
+            <p><strong>💡 Focus:</strong> Usa 10kg per mano. Schiena dritta, scendi profondo.</p>
+            <a href="https://www.youtube.com/results?search_query=bulgarian+split+squat" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Stacchi Rumeni / RDL (Coscia Post)</h2>
+            <div class="badge">4 x 10-12</div>
+            <p><strong>💡 Focus:</strong> Senti tirare dietro la coscia. Manubri vicini alle gambe.</p>
+            <a href="https://www.youtube.com/results?search_query=romanian+deadlift+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Affondi Posteriori Alternati</h2>
+            <div class="badge">3 x 12 per gamba</div>
+            <p><strong>💡 Focus:</strong> Passo lungo all'indietro. Ginocchio sfiora terra.</p>
+            <a href="https://www.youtube.com/results?search_query=reverse+lunges+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Calf Raise su gradino (Polpacci)</h2>
+            <div class="badge">4 x 20</div>
+            <p><strong>💡 Focus:</strong> Usa un peso in mano. Massima escursione.</p>
+            <a href="https://www.youtube.com/results?search_query=calf+raise+step" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Superwoman (Schiena Inf/Lombari)</h2>
+            <div class="badge">3 x 15</div>
+            <p><strong>💡 Focus:</strong> Solleva petto e gambe insieme. Tieni 2s.</p>
+            <a href="https://www.youtube.com/results?search_query=superman+exercise" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
     </div>
 
     <div class="sticky-timer">
@@ -45,7 +80,7 @@
     <script>
         function savePDF() {
             const element = document.getElementById('content');
-            html2pdf().from(element).save('Allenamento_Martedì.pdf');
+            html2pdf().from(element).save('Allenamento_Mercoledì.pdf');
         }
         let t;
         function startTimer(s) {
