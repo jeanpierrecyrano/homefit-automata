@@ -26,14 +26,56 @@
 <body>
     <div id="content">
         <div class="header">
-            <h1>Domenica: Giorno di Recupero Attivo 🔋</h1>
-            <p>Passeggiata o stretching leggero</p>
+            <h1>Lunedì: Upper Body (Spinta) & Addome Sup.</h1>
+            <p>Stima dispendio: 320 - 380 kcal</p>
         </div>
         <div style="display:flex; gap:10px; justify-content:center; margin-bottom:20px;">
             <button onclick="document.body.classList.toggle('light-mode')">☀️ Garden Mode</button>
             <button onclick="savePDF()">💾 Salva PDF</button>
         </div>
-        <div class='card' style='text-align:center;'><h2>Tempo di Recupero!</h2><p>I muscoli hanno bisogno di riposo per crescere. Ci vediamo alla prossima sessione!</p></div>
+        
+        <div class="card">
+            <h2>Push-up Classici (Focus: Petto Esterno)</h2>
+            <div class="badge">4 x Max</div>
+            <p><strong>💡 Focus:</strong> Discesa in 3s. Se ne fai +20, metti un peso sulla schiena.</p>
+            <a href="https://www.youtube.com/results?search_query=push+up+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Squeeze Press (Focus: Petto Interno)</h2>
+            <div class="badge">3 x 8-12</div>
+            <p><strong>💡 Focus:</strong> Usa 8-10kg. Schiaccia i manubri tra loro con forza.</p>
+            <a href="https://www.youtube.com/results?search_query=dumbbell+squeeze+press" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Arnold Press (Spalle Ant/Mid)</h2>
+            <div class="badge">4 x 8-10</div>
+            <p><strong>💡 Focus:</strong> Carico progressivo. Ruota i polsi in spinta.</p>
+            <a href="https://www.youtube.com/results?search_query=arnold+press+form" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Alzate Laterali (Spalla Centrale)</h2>
+            <div class="badge">3 x 12-15</div>
+            <p><strong>💡 Focus:</strong> Usa 4-6kg. Fermo di 2 secondi in alto.</p>
+            <a href="https://www.youtube.com/results?search_query=lateral+raises+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Skullcrusher a terra (Tricipiti)</h2>
+            <div class="badge">3 x 10-12</div>
+            <p><strong>💡 Focus:</strong> Gomiti immobili. Punta al soffitto.</p>
+            <a href="https://www.youtube.com/results?search_query=skull+crushers+dumbbells" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
+        <div class="card">
+            <h2>Crunch Zavorrato (Addome Sup)</h2>
+            <div class="badge">3 x 15-20</div>
+            <p><strong>💡 Focus:</strong> Tieni un manubrio sul petto. Contrai forte.</p>
+            <a href="https://www.youtube.com/results?search_query=weighted+crunch" target="_blank" class="yt-link">▶️ Guarda Esecuzione</a>
+        </div>
+        
     </div>
 
     <div class="sticky-timer">
@@ -45,7 +87,7 @@
     <script>
         function savePDF() {
             const element = document.getElementById('content');
-            html2pdf().from(element).save('Allenamento_Domenica.pdf');
+            html2pdf().from(element).save('Allenamento_Lunedì.pdf');
         }
         let t;
         function startTimer(s) {
